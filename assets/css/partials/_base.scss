@@ -1,0 +1,133 @@
+$universal-color-1: #000000;
+$universal-color-2: #ffffff;
+$theme-color: #181818;
+
+$container-width: 1800px;
+$container-sm-width: 1300px;
+
+
+$section-space-mq: 7rem;
+
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+
+
+h1, h2, h3, h4, li, ul, p, figure{
+    margin: 0 ;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container-lg{
+    max-width: 1800px;
+}
+
+
+.container-md{
+    max-width: 1600px;
+}
+
+
+.section-space-sm{
+    margin-bottom: 5rem;
+}
+
+
+.section-space-md{
+    margin-bottom: 7rem;
+}
+
+
+.section-space-lg{
+    margin-bottom: 10rem;
+}
+
+
+
+.partial-container-right{
+    max-width: calc((#{$container-width}) + (50% - (#{$container-width}/2) ));
+    padding-right: 1rem;
+    margin-right: auto;
+}
+
+.partial-container-left{
+    max-width: calc((#{$container-sm-width}) + (50% - (#{$container-sm-width}/2) ));
+    padding-left: 1rem;
+    margin-left: auto;
+}
+
+.n_m{
+    padding-left: 0!important;
+}
+
+
+
+.hero-caption-space{
+    padding-bottom: 5rem;
+}
+
+
+.d_flex{
+    display: flex;
+}
+
+.para{
+    line-height: 2rem;
+}
+
+
+.theme-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+
+    i{
+        font-size: 1rem;
+    }
+
+
+    svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+        polygon {
+            fill: transparent;
+            stroke: $universal-color-1;
+            transition: all ease-in-out .5s;
+        }
+
+    }   
+    &:hover{
+        color: $universal-color-2!important;
+        polygon{
+            opacity: 1;
+            fill: $universal-color-1;
+        }
+
+    }
+
+}

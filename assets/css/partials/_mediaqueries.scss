@@ -1,0 +1,72 @@
+@media (max-width:1200px){
+    .augmented-reality{
+        .augmented-reality-wrapper{
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .augmented-image {
+            width: 100%;
+        }
+        .augmented-caption {
+            width: 100%;
+            padding: 3rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media (max-width:991px){
+    .partial-container-right{
+        padding-left: 1rem;
+    }
+
+    .main-navbar{
+        .navbar-nav{
+            margin-bottom: 0!important;
+        }
+
+        .navbar-wrapper{
+            .lg-show{
+                display: flex!important;
+            }
+            .lg-hide{
+                display: none;
+            }
+        }
+    }
+    .video-caption{
+        br{
+            display: none!important;
+        }
+    }
+    .car-specs{
+        ul{
+            flex-direction: column;
+            li{
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .augmented-reality{
+        .col-inner{
+            align-items: flex-start;
+        }
+    }
+    .overview{
+        .mq-space{
+            padding-bottom: 5rem!important;
+        }
+    }
+
+
+
+    .clip_path_rm{
+        clip-path: none!important;
+    }
+    
+}
+
+
+
